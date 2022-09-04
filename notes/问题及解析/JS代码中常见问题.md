@@ -22,7 +22,7 @@
 
    * var变量声明会提前是，而let不会，const必须要初始化。
    * 尽量不使用var，变量定义不加前缀的话就会变成全局变量。
-   * const定义常量，但是定义引用类型例如对象或者数组时是可以改变里面内容得。
+   * const定义常量，但是定义引用类型例如对象或者数组时可以改变里面内容。
 
    ```-JS
    const car = {type:"Fiat", model:"500", color:"white"};
@@ -145,7 +145,7 @@
 9. Set和Map结构
 
    * Set的结构：键集合，不重复
-      WeakSet: 因为不算引用考垃圾回收的不确定性所以 WeakSet 不可遍历。（WeakSet 的一个用处，是储存 DOM 节点）
+      WeakSet: 因为不算引用考虑垃圾回收的不确定性所以 WeakSet 不可遍历。（WeakSet 的一个用处，是储存 DOM 节点）
           1. 成员只能是对象
           2. WeakSet 中的对象都是弱引用，即垃圾回收机制不考虑 WeakSet 对该对象的引用
    * Map结构：键值对集合，比对象更自由
@@ -170,6 +170,13 @@
     * 
 13. 监听对象或者数组得变化: [参考1](https://www.cnblogs.com/yayaxuping/p/10951738.html),[参考2](https://www.jb51.net/article/162584.htm)
 14. JS基本类型的临时包装和基本类型的方法继承
+    * 基本包装类型的实例只会存在于一行代码执行的一瞬间，然后就会被立即销毁
+    ```javascript
+    let str = 'test';
+    console.log(str instanceof String) // false
+    console.log(String.prototype.isPrototypeOf(str)) // false
+    console.log(str.__proto__ === String.prototype) // true
+    ```
 15. History.replaceState()干掉带token得链接
 16. 闭包中this的指向： 指向window/null
 17. 多维数组的toString方法
