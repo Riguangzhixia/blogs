@@ -1,4 +1,13 @@
-# JS个人总结
+---
+slug: frontEnd/js
+title: js!🎈
+authors:
+- name: Fei Peng
+  title: Front-end developer
+  url: https://github.com/PENGFEI-CN
+  image_url: https://github.com/PENGFEI-CN.png
+  tags: [blogs, front-end]
+---
 
 ## 事件循环机制
 所有任务都在主线程上执行，即执行栈(Execution Context Stack)，而JS执行任务的队列可以划分为微任务（ES6中称作PromiseJobs）和宏任务（ES6中称作ScriptJobs）队列，执行顺序可以分为三步

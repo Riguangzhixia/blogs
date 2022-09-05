@@ -1,3 +1,14 @@
+---
+slug: questions/jsCode
+title: JS代码问题!🎈
+authors:
+- name: Fei Peng
+  title: Front-end developer
+  url: https://github.com/PENGFEI-CN
+  image_url: https://github.com/PENGFEI-CN.png
+  tags: [blogs, questions]
+---
+
 ## 代码常见问题及知识点
 
 1. this指向得改变，以及箭头函数和合理使用。[JavaScript 的 this 指向问题深度解析]("https://segmentfault.com/a/1190000008400124")

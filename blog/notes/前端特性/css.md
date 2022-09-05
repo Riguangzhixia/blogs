@@ -1,4 +1,14 @@
-# css近日知识点
+---
+slug: frontEnd/css
+title: css!🎈
+authors:
+- name: Fei Peng
+  title: Front-end developer
+  url: https://github.com/PENGFEI-CN
+  image_url: https://github.com/PENGFEI-CN.png
+  tags: [blogs, front-end]
+---
+
 ## 1. CSS特性
 ### 动画
 * transition 过渡

@@ -1,4 +1,13 @@
-# virtual
+---
+slug: questions/virtualDom
+title: 虚拟DOM问题!🎈
+authors:
+- name: Fei Peng
+  title: Front-end developer
+  url: https://github.com/PENGFEI-CN
+  image_url: https://github.com/PENGFEI-CN.png
+  tags: [blogs, questions]
+---
 
 ## jsx转化为vdom--h函数
 

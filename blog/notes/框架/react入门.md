@@ -1,10 +1,19 @@
-# React入门
+---
+slug: framework/react
+title: react!🎈
+authors:
+- name: Fei Peng
+  title: Front-end developer
+  url: https://github.com/PENGFEI-CN
+  image_url: https://github.com/PENGFEI-CN.png
+  tags: [blogs, framework]
+---
 
-## 学习的概念
+## 基础概念
 
 Virtual DOM、Diff算法、JSX、props、state、数据不可变性、class、export default&export&import|modules.export&exports&require的定义、react中key的作用（对比vue）
 
-## 详细
+### 详细
 * JSX：（JavaScript 的语法扩展）可以使用js中的变量以及函数。因为 JSX 的特性更接近 JavaScript 而不是 HTML , 所以 React DOM 使用 camelCase 小驼峰命名！ 来定义属性的名称，而不是使用 HTML 的属性名称。
 * 组件props：组件名称必须以大写字母开头
 * 函数定义 无状态
@@ -27,5 +36,5 @@ Virtual DOM、Diff算法、JSX、props、state、数据不可变性、class、ex
   * &&与运算表达式
   * 根据条件判断修改render返回值，render返回null即不渲染  
 * 高阶组件：高级函数/函数式编程
-* 第三方库：refs的使用，空的 </div>，react不会更新它
+* 第三方库：refs的使用
 * 受控组件与非受控组件的选择
