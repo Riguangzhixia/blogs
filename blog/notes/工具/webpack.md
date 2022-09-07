@@ -1,6 +1,6 @@
 ---
 slug: tool/webpack
-title: webpack!🎈
+title: webpack
 authors:
 - name: Fei Peng
   title: Front-end developer

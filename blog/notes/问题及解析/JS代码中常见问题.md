@@ -1,6 +1,6 @@
 ---
 slug: questions/jsCode
-title: JS代码问题!🎈
+title: JS代码问题
 authors:
 - name: Fei Peng
   title: Front-end developer
@@ -11,12 +11,12 @@ authors:
 
 ## 代码常见问题及知识点
 
-1. this指向得改变，以及箭头函数和合理使用。[JavaScript 的 this 指向问题深度解析]("https://segmentfault.com/a/1190000008400124")
+1. this指向得改变，以及箭头函数和合理使用。[JavaScript 的 this 指向问题深度解析](https://segmentfault.com/a/1190000008400124)
 
    * this一般指向得是函数运行时所在的环境对象，所以用箭头函数的时候，this有时候会获取不到页面中触发事件的dom。如下输出得就会是undefined获取不到dom内容。setTimeout中得this会指向全局对象window，也可以用箭头函数避免。
    * 在箭头函数出现之前，每个新定义的函数都有它自己的 this值（在构造函数的情况下是一个新对象，在严格模式的函数调用中为 undefined，如果该函数被作为“对象方法”调用则为基础对象等）。
 
-   ```-js
+   ```-javascript
    <div class="test">
        wdwdaawd
    </div>
@@ -35,7 +35,7 @@ authors:
    * 尽量不使用var，变量定义不加前缀的话就会变成全局变量。
    * const定义常量，但是定义引用类型例如对象或者数组时可以改变里面内容。
 
-   ```-JS
+   ```-javascript
    const car = {type:"Fiat", model:"500", color:"white"};
    car.color = "red";
    ```
@@ -46,7 +46,7 @@ authors:
 
 4. eval使用得安全问题
 
-   * [关于eval的劫持操作]("http://www.vuln.cn/8007")
+   * [关于eval的劫持操作](http://www.vuln.cn/8007)
 
 5. [js的运行机制](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)
 
@@ -63,7 +63,7 @@ authors:
 
    * 第一个参数的值始终是字符串值的数组。 其余参数获取传递到模板字符串中的表达式的值
 
-    ```-JS
+    ```-javascript
     function getPersonInfo(one, two, three) {
       console.log(one);
       console.log(two);
@@ -82,7 +82,7 @@ authors:
 
    * 和原始类型不同，引用类型比较的是引用对象是否相同。
 
-    ```-JS
+    ```-javascript
     function age(){
         if(age === {age:18}){
             console.log('Y1');
@@ -101,7 +101,7 @@ authors:
    * 字符串是可迭代的。 扩展运算符将迭代的每个字符映射到一个元素。
    * 扩展运算符作为参数，返回一个带参数的数组
 
-    ```-JS
+    ```-javascript
     function getAge(...args) {
       console.log(args);
       console.log(typeof args);
@@ -111,7 +111,7 @@ authors:
     //object
     ```
 
-    ```-JS
+    ```-javascript
     console.log([..."wdnmd"])
     //['w','d','n','m','d']
     ```
@@ -178,7 +178,6 @@ authors:
     * Object.create(原始对象)
     * Object.keys(所有属性，仅自身)
     * for in (所有属性，包括原型链)
-    * 
 13. 监听对象或者数组得变化: [参考1](https://www.cnblogs.com/yayaxuping/p/10951738.html),[参考2](https://www.jb51.net/article/162584.htm)
 14. JS基本类型的临时包装和基本类型的方法继承
     * 基本包装类型的实例只会存在于一行代码执行的一瞬间，然后就会被立即销毁
@@ -191,7 +190,7 @@ authors:
 15. History.replaceState()干掉带token得链接
 16. 闭包中this的指向： 指向window/null
 17. 多维数组的toString方法
-    ```-JS
+    ```-javascript
     [1,[2,[3,4,[4]]]].toString()
     //结果是"1,2,3,4"
     ```

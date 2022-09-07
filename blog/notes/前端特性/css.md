@@ -1,6 +1,6 @@
 ---
 slug: frontEnd/css
-title: css!🎈
+title: css
 authors:
 - name: Fei Peng
   title: Front-end developer

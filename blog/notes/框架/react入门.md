@@ -1,6 +1,6 @@
 ---
 slug: framework/react
-title: react!🎈
+title: react
 authors:
 - name: Fei Peng
   title: Front-end developer

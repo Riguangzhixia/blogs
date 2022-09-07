@@ -1,6 +1,6 @@
 ---
 slug: questions/virtualDom
-title: 虚拟DOM问题!🎈
+title: 虚拟DOM问题
 authors:
 - name: Fei Peng
   title: Front-end developer

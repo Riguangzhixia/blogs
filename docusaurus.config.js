@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'blogs',
-  tagline: 'blogs',
+  title: 'PengFei',
+  tagline: '知识库',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -16,15 +16,15 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'PENGFEI-CN', // Usually your GitHub org/user name.
+  projectName: 'blogs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh',
+    locales: ['zh'],
   },
 
   presets: [
@@ -54,13 +54,27 @@ const config = {
     [
       '@docusaurus/preset-classic',
       {
+        docs: {
+          path: 'docs',
+          routeBasePath: 'docs',
+          include: ['**/*.md', '**/*.mdx'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+          sidebarPath: 'sidebars.js',
+          // routeBasePath: '/', // 把文档放在网站根部
+          /* 其他文档插件配置 */
+        },
         blog: {
           path: 'blog',
           // 一般使用场景：字符串 editUrl
           // editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
           // 高级使用场景：函数 editUrl
-          editUrl: ({locale, blogDirPath, blogPath, permalink}) =>
-              `https://github.com/facebook/docusaurus/edit/main/website/${blogDirPath}/${blogPath}`,
+          // editUrl: ({locale, blogDirPath, blogPath, permalink}) =>
+          //     `https://github.com/facebook/docusaurus/edit/main/website/${blogDirPath}/${blogPath}`,
           editLocalizedFiles: false,
           blogTitle: 'Front-end Blogs',
           blogDescription: 'Front-end JS CSS HTML',
@@ -107,16 +121,16 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://gitee.com/pengfei19981209/blogs',
-            label: 'Gitee',
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: '文档',
+          },
+          {to: '/blog', label: '博客', position: 'left'},
+          {
+            label: 'GitHub',
+            href: 'https://github.com/PENGFEI-CN',
             position: 'right',
           },
         ],
@@ -137,8 +151,9 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/PENGFEI-CN',
+                href: 'https://gitee.com/pengfei19981209/blogs',
+                label: 'Gitee',
+                position: 'right',
               },
               // {
               //   label: 'Stack Overflow',
@@ -160,6 +175,9 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
+              },  {
+                label: 'Docs',
+                to: '/docs',
               },
             ],
           },
@@ -169,6 +187,11 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
       },
     }),
 };
