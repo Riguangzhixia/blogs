@@ -1,6 +1,6 @@
 ---
 slug: framework/vue
-title: vue!🎈
+title: vue
 authors:
 - name: Fei Peng
   title: Front-end developer

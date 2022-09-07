@@ -1,6 +1,6 @@
 ---
 slug: Blogs
-title: Welcome!🎈
+title: Welcome
 authors:
 - name: Fei Peng
   title: Front-end developer

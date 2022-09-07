@@ -1,6 +1,6 @@
 ---
 slug: frontEnd/html
-title: html!🎈
+title: html
 authors:
 - name: Fei Peng
   title: Front-end developer

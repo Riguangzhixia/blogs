@@ -1,6 +1,6 @@
 ---
 slug: frontEnd/js
-title: js!🎈
+title: js
 authors:
 - name: Fei Peng
   title: Front-end developer
