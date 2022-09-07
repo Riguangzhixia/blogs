@@ -4,9 +4,12 @@ on:
   push:
     branches:
       - main
-    # 如果你想要进一步定义触发条件、路径等，可以查看文档
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
-
+    paths:
+      - '.github/workflows/deploy.yml'
+      - 'blog/**'
+      - 'src/**'
+      - 'doc/**'
+      - 'static/**'
 jobs:
   deploy:
     name: Deploy to GitHub Pages
