@@ -9,7 +9,7 @@ authors:
   tags: [blogs]
 ---
 
-总结并梳理前端知识点做下的记录，对应的练习[代码仓](https://gitee.com/pengfei19981209/blog-codes)
+总结并梳理前端知识点做下的记录，对应的练习[代码仓](https://github.com/pengfei-cn/blog-codes.git)
 
 ## 目录
 
