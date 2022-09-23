@@ -1,5 +1,5 @@
 ---
-slug: frontEnd/html
+slug: /html
 title: html
 authors:
 - name: Fei Peng

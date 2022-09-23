@@ -1,5 +1,5 @@
 ---
-slug: frontEnd/css
+slug: /frontEnd/css
 title: css
 authors:
 - name: Fei Peng
@@ -58,42 +58,41 @@ authors:
 
 ## 2. CSS效果实现
 ### 文本移除省略号
-* 单行文本
-  * 统一css：
-    ```
-    overflow: hidden;//溢出隐藏
-    white-space: nowrap;//空间溢出换行
-    text-overflow: ellipsis;//文本移除省略号替代
-    ```
+* 单行文本 统一css：
+  ```
+  overflow: hidden;//溢出隐藏
+  white-space: nowrap;//空间溢出换行
+  text-overflow: ellipsis;//文本移除省略号替代
+  ```
 * webkit内核浏览器处理
-    ```
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-    ```
+  ```
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  ```
 * 其他内核浏览器处理方案：
     用js通过字体大小和line-height以及盒子得height限制来实现溢出添加省略号，伪类添加省略号图片或者替换掉最后几个文字为省略号等方法
 
 ### 翻转卡片动画实现
 * 3D视角设置背面不可见设置动画并旋转正反面即可实现
   ```-css
-    transform-style: preserve-3d; // 设置为3D
-    perspective: 5000px; // 3D 视角距离
-    perspective-origin: 50% 50%; // 观察者的位置
-    .front {
-        z-index: 3;
-        transform: rotateY(0deg);
-    }
-    .back {
-        z-index: 2;
-        transform: rotateY(180deg);
-    }
+  transform-style: preserve-3d; // 设置为3D
+  perspective: 5000px; // 3D 视角距离
+  perspective-origin: 50% 50%; // 观察者的位置
+  .front {
+  z-index: 3;
+  transform: rotateY(0deg);
+  }
+  .back {
+  z-index: 2;
+  transform: rotateY(180deg);
+  }
   ```
 
 ### 渐变色略过效果
 * 按钮白光掠过效果即可用如下渐变白色光条设置translate旋转一下并通过动画实现移动即可实现
-    ```-js
-        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, 0) 100%);
-    ```
+  ```-js
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, 0) 100%);
+  ```
 
 ### text-shadow实现复制文字
 * 利用阴影效果实现文字的复制

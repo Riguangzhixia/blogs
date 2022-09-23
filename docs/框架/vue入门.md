@@ -1,5 +1,5 @@
 ---
-slug: framework/vue
+slug: /vue
 title: vue
 authors:
 - name: Fei Peng

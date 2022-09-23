@@ -1,5 +1,5 @@
 ---
-slug: questions/virtualDom
+slug: /virtualDom
 title: 虚拟DOM问题
 authors:
 - name: Fei Peng

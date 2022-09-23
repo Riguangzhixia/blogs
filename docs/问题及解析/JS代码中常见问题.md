@@ -1,5 +1,5 @@
 ---
-slug: questions/jsCode
+slug: /js-code
 title: JS代码问题
 authors:
 - name: Fei Peng

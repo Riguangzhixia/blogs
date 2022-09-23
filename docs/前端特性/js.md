@@ -1,5 +1,5 @@
 ---
-slug: frontEnd/js
+slug: /js
 title: js
 authors:
 - name: Fei Peng
@@ -82,17 +82,11 @@ authors:
     }
     
     function Child() {}
-    
     let personB = new Person("Banana")
-    
     Child.prototype = personB;
-    
     let child = new Child()
-    
     child.sayName()
-    
     let person = new Person("Apple")
-    
     person.sayName()
     
     console.log(child.__proto__ === Child.prototype) // 实例的__proto__指向原型对象，prototype一样
@@ -101,7 +95,6 @@ authors:
     
     console.log(child instanceof Person)
     console.log(child instanceof Object)  // instanceof检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上
-    
     console.log(Person.prototype.isPrototypeOf(child)) // isPrototypeOf检测一个对象是否存在于另一个对象的原型链
     ```
   

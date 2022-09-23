@@ -1,5 +1,5 @@
 ---
-slug: tool/webpack
+slug: /webpack
 title: webpack
 authors:
 - name: Fei Peng
