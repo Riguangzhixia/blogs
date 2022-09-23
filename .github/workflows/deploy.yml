@@ -6,10 +6,10 @@ on:
       - master
     paths:
       - '.github/workflows/deploy.yml'
-      - 'blog/**'
-      - 'src/**'
-      - 'doc/**'
-      - 'static/**'
+      - 'blog/**/*'
+      - 'src/**/*'
+      - 'doc/**/*'
+      - 'static/**/*'
       - '*.js'
 jobs:
   deploy:
