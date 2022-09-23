@@ -8,7 +8,7 @@ on:
       - '.github/workflows/deploy.yml'
       - 'blog/**/*'
       - 'src/**/*'
-      - 'doc/**/*'
+      - 'docs/**/*'
       - 'static/**/*'
       - '*.js'
 jobs:
