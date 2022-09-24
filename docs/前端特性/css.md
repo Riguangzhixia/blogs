@@ -1,5 +1,5 @@
 ---
-slug: /frontEnd/css
+slug: /css
 title: css
 authors:
 - name: Fei Peng
@@ -70,7 +70,7 @@ authors:
   -webkit-line-clamp: 3;
   ```
 * 其他内核浏览器处理方案：
-    用js通过字体大小和line-height以及盒子得height限制来实现溢出添加省略号，伪类添加省略号图片或者替换掉最后几个文字为省略号等方法
+  用js通过字体大小和line-height以及盒子得height限制来实现溢出添加省略号，伪类添加省略号图片或者替换掉最后几个文字为省略号等方法
 
 ### 翻转卡片动画实现
 * 3D视角设置背面不可见设置动画并旋转正反面即可实现

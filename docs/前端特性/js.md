@@ -1,6 +1,6 @@
 ---
 slug: /js
-title: js
+title: JS
 authors:
 - name: Fei Peng
   title: Front-end developer
@@ -17,7 +17,7 @@ authors:
 3. 读取并执行所有的宏任务
 
 - 具体执行顺序可以看作 主程序代码—>process.nextTick—>Promise.then|async await后的语句——>setTimeout|setInterval——>setImmediate——> I/O——>UI rendering
-   
+
     ```javascript
     // 以v8引擎举例
     setImmediate(function() {
@@ -54,7 +54,7 @@ authors:
     
     readData();
     ```
-    输出结果为
+  输出结果为
     ```
     3
     4
@@ -97,9 +97,9 @@ authors:
     console.log(child instanceof Object)  // instanceof检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上
     console.log(Person.prototype.isPrototypeOf(child)) // isPrototypeOf检测一个对象是否存在于另一个对象的原型链
     ```
-  
+
 ## [关于ES6和CommonJS模块化问题](https://zhuanlan.zhihu.com/p/422704350)
 1. * CommonJS 模块是顺序执行的，遇到 require 时，加载并执行对应模块的代码，然后再回来执行当前模块的代码。
-   * 在循环引用时，在模块执行前就会创建好对应的模块对象并进行缓存，尽管是一个空对象，但是一般不会导致JS报错。
+* 在循环引用时，在模块执行前就会创建好对应的模块对象并进行缓存，尽管是一个空对象，但是一般不会导致JS报错。
 2. * ES6 模块借助 JS 引擎实现，具体分为连接和评估阶段，从效果上看，子模块先于父模块被执行。
-   * ES6 模块的导入导出语句的位置不影响模块代码语句的执行结果。
+* ES6 模块的导入导出语句的位置不影响模块代码语句的执行结果。
