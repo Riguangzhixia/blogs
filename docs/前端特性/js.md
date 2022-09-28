@@ -103,3 +103,32 @@ authors:
    * 在循环引用时，在模块执行前就会创建好对应的模块对象并进行缓存，尽管是一个空对象，但是一般不会导致JS报错。
 2. * ES6 模块借助 JS 引擎实现，具体分为连接和评估阶段，从效果上看，子模块先于父模块被执行。
    * ES6 模块的导入导出语句的位置不影响模块代码语句的执行结果。
+## 函数柯里化
++ 高阶函数：  
+函数作为输入或者输出函数的函数
++ 柯里化：
+将使用多个参数的函数转换成一系列使用一个参数的函数
+```javascript
+function curring(fn) {
+  return function curry(...args1) {
+    if (args1.length >= fn.length) {
+      return fn.call(null, ...args1)
+    // 参数长度等于函数的参数长度时调用函数
+    } else {
+      return function (...args2) {
+        return curry.apply(null, [...args1, ...args2])
+      }
+      // 递归调用自己来合并参数直到满足长度要求
+    }
+  }
+}
+
+function sum(a, b, c, d, e) {
+  return a + b + c + d + e
+}
+let currifiedSum = curring(sum)
+console.log(currifiedSum(1,3,4)(1)(23))
+//解析:
+//1、这里的fn.length获取的是函数传入参数的长度
+//2、这里使用递归的思想
+```
