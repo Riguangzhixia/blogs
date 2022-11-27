@@ -9,19 +9,36 @@ authors:
   tags: [docs, framework]
 ---
 
-## 基础概念
-
-Virtual DOM、Diff算法、JSX、props、state、数据不可变性、class、export default&export&import|modules.export&exports&require的定义、react中key的作用（对比vue）
+## 概念要点
+生命周期、Virtual DOM、JSX、props、state、数据不可变性、class、fiber、函数式组件、Hooks、Suspense懒加载
+### 生命周期
+目前推荐使用的生命周期函数
+* 挂载时
+  constructor()
+  static getDerivedStateFromProps()
+  render()
+  componentDidMount()
+* 更新
+  static getDerivedStateFromProps()
+  shouldComponentUpdate()
+  render()
+  getSnapshotBeforeUpdate()
+  componentDidUpdate()
+* 错误
+  static getDerivedStateFromError()
+  componentDidCatch()
+* 卸载
+  componentWillUnmount()
 
 ### JSX：
 （JavaScript 的语法扩展）可以使用js中的变量以及函数。因为 JSX 的特性更接近 JavaScript 而不是 HTML , 所以 React DOM 使用 camelCase 小驼峰命名 来定义属性的名称，而不是使用 HTML 的属性名称。
 ### 组件props：
 组件名称必须以大写字母开头
-### 函数定义无状态
-### class定义 有状态
+### 函数定义组件：无状态
+### class定义：有状态
 ### props（组件的参数）
-不能修改props只能当成纯函数的参数使用！
-propTypes验证器，限制props参数的类型或者使用正则限制参数，错误则返回error对象 MyComponent.propTypes = {data:React.PropTypes.filter}
+* 不能修改props只能当成纯函数的参数使用！
+* propTypes验证器，限制props参数的类型或者使用正则限制参数，错误则返回error对象 MyComponent.propTypes = {data:React.PropTypes.filter}
 ### state 
 （组件的状态）自顶向下或单向数据流,可修改。
 ### extends 和 super：
@@ -42,5 +59,9 @@ onClick={activateLasers}，绑定属性的命名采用驼峰式写法，传入�
   * &&与运算表达式
   * 根据条件判断修改render返回值，render返回null即不渲染  
 ### 高阶组件：高级函数/函数式编程
-### 第三方库：refs的使用
 ### 受控组件与非受控组件的选择
+  受控组件相较于非受控组件来说主要优势如下：更方便的实现对用户输入的实时反馈，从而能够实时的校验输入并控制组件（例如按钮的禁用等）
+  * 非受控组件：使用 ref 来从 DOM 节点中获取表单数据
+  * 受控组件：通过React的state和setState来管理表单数据
+### key属性
+当 key 变化时， React 会创建一个新的而不是更新一个既有的组件
