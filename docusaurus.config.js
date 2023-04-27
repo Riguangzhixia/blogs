@@ -76,11 +76,12 @@ const config = {
           // editUrl: ({locale, blogDirPath, blogPath, permalink}) =>
           //     `https://github.com/facebook/docusaurus/edit/main/website/${blogDirPath}/${blogPath}`,
           editLocalizedFiles: false,
-          blogTitle: 'Front-end Blogs',
-          blogDescription: 'Front-end JS CSS HTML',
+          blogTitle: '胡思乱想Blogs',
+          blogDescription: '胡思乱想',
           blogSidebarCount: 10,
-          blogSidebarTitle: 'PF Blogs',
+          blogSidebarTitle: '胡思乱想Blogs',
           routeBasePath: 'blog',
+          tagsBasePath: 'tags',
           include: ['**/*.{md,mdx}'],
           exclude: [
             '**/_*.{js,jsx,ts,tsx,md,mdx}',
@@ -93,7 +94,7 @@ const config = {
           blogPostComponent: '@theme/BlogPostPage',
           blogTagsListComponent: '@theme/BlogTagsListPage',
           blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
-          remarkPlugins: [],
+          remarkPlugins: [import('remark-math')],
           rehypePlugins: [],
           beforeDefaultRemarkPlugins: [],
           beforeDefaultRehypePlugins: [],
@@ -192,6 +193,35 @@ const config = {
         sidebar: {
           hideable: true,
         },
+      },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'YOUR_APP_ID',
+
+        // Public API key: it is safe to commit it
+        apiKey: 'YOUR_SEARCH_API_KEY',
+
+        indexName: 'YOUR_INDEX_NAME',
+
+        // Optional: see doc section below
+        contextualSearch: true,
+
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: 'external\\.com|domain\\.com',
+
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/',
+        },
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+
+        //... other Algolia params
       },
     }),
 };

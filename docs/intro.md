@@ -1,13 +1,21 @@
 ---
 slug: /
 title: Welcome
+authors:
+- name: Fei Peng
+  title: Front-end developer
+  url: https://github.com/PENGFEI-CN
+  image_url: https://github.com/PENGFEI-CN.png
+  tags: [docs]
 ---
 
-总结并梳理前端知识点做下的记录，对应的练习[代码仓](https://github.com/pengfei-cn/blog-codes.git)
+记录近期生活感悟|学习日常（etc:遇到问题时的思路）
 
 ## 目录
+1. 生活日常
+2. 遇到的问题及解析
++ JS代码
++ 虚拟DOM
++ 面试问题
 
-1. 前端特性
-2. 框架
-3. 工具
-4. 日常遇到的问题及解析
+
