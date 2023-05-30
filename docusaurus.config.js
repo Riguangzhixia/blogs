@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'PengFei',
+  title: 'Riguangzhixia',
   tagline: '知识库',
-  url: 'https://pengfei-cn.github.io',
+  url: 'https://Riguangzhixia.github.io',
   baseUrl: '/blogs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'PENGFEI-CN', // Usually your GitHub org/user name.
+  organizationName: 'Riguangzhixia', // Usually your GitHub org/user name.
   projectName: 'blogs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -116,7 +116,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'PengFei Blogs',
+        title: 'Riguangzhixia Blogs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -131,7 +131,7 @@ const config = {
           {to: '/blog', label: '博客', position: 'left'},
           {
             label: 'GitHub',
-            href: 'https://github.com/PENGFEI-CN',
+            href: 'https://github.com/Riguangzhixia',
             position: 'right',
           },
         ],
@@ -152,7 +152,7 @@ const config = {
             title: 'Community',
             items: [
               {
-                href: 'https://gitee.com/pengfei19981209/blogs',
+                href: 'https://gitee.com/Riguangzhixia19981209/blogs',
                 label: 'Gitee',
                 position: 'right',
               },

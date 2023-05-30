@@ -4,8 +4,8 @@ title: Welcome
 authors:
 - name: Fei Peng
   title: Front-end developer
-  url: https://github.com/PENGFEI-CN
-  image_url: https://github.com/PENGFEI-CN.png
+  url: https://github.com/Riguangzhixia
+  image_url: https://github.com/Riguangzhixia.png
 tags:
 - 介绍
 ---
