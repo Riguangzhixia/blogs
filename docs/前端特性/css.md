@@ -99,6 +99,10 @@ authors:
   ```-js
   text-shadow: .5em 0, 1em 0, 1.5em 0;
   ```
+### justify和align（content\item）具体的体现
+[sandbox](https://codesandbox.io/s/angry-kate-s3rlqc?file=/index.html)
 
 ### grid布局
 * [grid二维网格布局](http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
+
+### 三行三列布局的具体实现
