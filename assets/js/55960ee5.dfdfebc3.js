@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblogs=self.webpackChunkblogs||[]).push([[4121],{8070:s=>{s.exports=JSON.parse('[{"label":"\u4ee3\u7801\u95ee\u9898","permalink":"/blogs/docs/tags/\u4ee3\u7801\u95ee\u9898","count":1}]')}}]);
